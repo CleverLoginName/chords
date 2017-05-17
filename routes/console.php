@@ -16,3 +16,7 @@ use Illuminate\Foundation\Inspiring;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');
+
+Artisan::command('import:chords-lanka', function () {
+    $this->info('Migrate data from HTML files');
+})->describe('Migrate data from HTML files');
